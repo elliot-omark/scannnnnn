@@ -11,9 +11,10 @@ public class scan_commas
         System.out.println("please enter words"); 
         Scanner stringinputs = new Scanner(System.in); 
         stringinputs.useDelimiter(",");
+        
         // Process each Java Scanner String input
-        while (stringinputs.hasNext()) {
-            String word = stringinputs.next(); 
+        while (stringinputs.hasNextLine()) {
+            String word = stringinputs.nextLine(); 
             System.out.println(word);
         }
     }
