@@ -10,15 +10,16 @@ public class working_scann
     public static void main(String[] args) {
         System.out.println("please enter words"); 
         Scanner inputs = new Scanner(System.in); 
+        
         // Process each Java Scanner String input
-        while (inputs.hasNext()) {
+        while (inputs.hasNextLine()) {
             if(inputs.hasNextInt()){ 
                 int value = inputs.nextInt(); 
                 value=3*value;
                 System.out.println(value);
 
             }
-            else{
+            if(inputs.hasNext()){
                 String value = inputs.next(); 
                 System.out.println(value);
             }

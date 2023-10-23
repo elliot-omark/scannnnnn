@@ -10,7 +10,7 @@ public class scan_commas
     public static void main(String[] args) {
         System.out.println("please enter words"); 
         Scanner stringinputs = new Scanner(System.in); 
-        stringinputs.useDelimiter(",");
+        stringinputs.useDelimiter(",[ ]");
         
         // Process each Java Scanner String input
         while (stringinputs.hasNextLine()) {
