@@ -9,13 +9,14 @@ public class scan_commas
 {
     public static void main(String[] args) {
         System.out.println("please enter words"); 
-        Scanner stringinputs = new Scanner(System.in); 
-        stringinputs.useDelimiter(",[ ]");
-        
-        // Process each Java Scanner String input
-        while (stringinputs.hasNextLine()) {
-            String word = stringinputs.nextLine(); 
-            System.out.println(word);
+        Scanner input = new Scanner(System.in); 
+        input.useDelimiter(",|\n");
+        while (input.hasNextLine()) {
+            if(input.hasNext()){
+
+                String word = input.next(); 
+                System.out.println(word);
+            }
         }
     }
 }
