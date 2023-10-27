@@ -35,11 +35,14 @@ public class ScannerReadCSVFile
                         classyear=inputs.nextInt();
                         year=true;
                     }
-                    else{
+                    if(year==true){
                         avg += inputs.nextInt();
                         people++;
                     }
-                    System.out.println(classyear +"; " +avg/people);
+                    else{
+                        System.out.println(classyear +"; " + avg/people);
+                        year=false;
+                    }
                 }
             }
             i++;
